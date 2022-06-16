@@ -1,4 +1,4 @@
-# Monty
+# Monty - Stacks, Queues - LIFO, FIFO
 
 > This ALX Software Engineering project is a custom ByteCode interpreter, coded in C.
 
@@ -12,25 +12,32 @@
 
 **The program reads from the file "byte_file.m" that contains one instruction per line. It then calls the right function to modify a stack according to the instruction. It prints custom error messages if the instruction is wrong.**
 
-### Setup
+### Prerequiosite
 
+Please use GCC 4.8.4 compiler or later.  
+
+
+
+### Setup
 
 To get a local copy up and running follow these simple example steps.
 
-```git clone https://github.com/kingsleyocran/monty.git```
+```  
+$ git clone https://github.com/kingsleyocran/monty.git  
+$ cd monty
+```  
 
 ### Compilation
 
-
-```gcc -Wall -Werror -Wextra -pedantic *.c -o monty```
+```$ gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty``
 
 ### Usage
-
 
 ```./monty byte_file.m```
 
 ## Files and Description
 
+Listed below are the descriptions of the files in this repo:  
 
 File | Description
 ---- | -----------
@@ -48,7 +55,23 @@ File | Description
 [char.c](./char.c) | handler functions for ascii instructions
 [bf](./bf) | Advanced tasks: Brainf*ck programs
 
-## Authors
+
+## opcodes 
+
+Listed below are the opcodes to can be used in monty:  
+  
+opcode | Function  
+--------|---------------  
+push | Pushes an element to the stack  
+pall | Prints all the values on the stack, starting from the top of the stack  
+pint| prints the value at the top of the stack, followed by a new line  
+pop| Removes the top element of the stack  
+swap | Swaps the top two elements of the stack  
+ add | Adds the top two elements of the stack  
+ nop| Doesn’t do anything 
+
+
+### Authors
 
 👤 **Kingsley Ocran**
 
