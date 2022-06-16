@@ -1,6 +1,7 @@
 #ifndef __HOOLB__
 #define __HOOLB__
 
+#define _XOPEN_SOURCE 700
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -9,6 +10,9 @@
 #include <fcntl.h>
 #include <sys/syscall.h>
 #include <string.h>
+
+
+#define getline(line, size, stream)
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
