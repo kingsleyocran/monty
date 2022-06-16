@@ -22,7 +22,7 @@ void (*get_func(char **parsed))(stack_t **, unsigned int)
 
 	int i;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 9; i++)
 	{
 		if (strcmp(func_arr[i].opcode, parsed[0]) == 0)
 		{
