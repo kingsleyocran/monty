@@ -1,5 +1,5 @@
 #include "monty.h"
-
+#include "func_list.h"
 
 /**
  * push_handler - handles the push instruction
